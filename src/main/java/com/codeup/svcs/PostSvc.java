@@ -24,7 +24,7 @@ public class PostSvc {
     }
 
     public Post save(Post post) {
-        post.setId(posts.size() + 1);
+        post.setId((long) posts.size() + 1);
         posts.add(post);
         return post;
     }
